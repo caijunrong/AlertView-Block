@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHP-Yl-CaR">
+                                <rect key="frame" x="270" y="285" width="60" height="30"/>
+                                <state key="normal" title="调用方法"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sEv-YH-Txf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gU-5l-8jf">
+                                <rect key="frame" x="265" y="373" width="71" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="Mqb-Bi-7Mb"/>
+                                    <constraint firstAttribute="height" constant="30" id="xVg-IP-qPa"/>
+                                </constraints>
+                                <state key="normal" title="再来一次"/>
+                                <connections>
+                                    <action selector="anotherBtnCLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ani-Ti-PJH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3gU-5l-8jf" firstAttribute="top" secondItem="tHP-Yl-CaR" secondAttribute="bottom" constant="58" id="02G-T4-UIb"/>
+                            <constraint firstItem="3gU-5l-8jf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SlA-GY-7zO"/>
+                            <constraint firstItem="tHP-Yl-CaR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WnG-Uy-EXz"/>
+                            <constraint firstItem="tHP-Yl-CaR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hck-bM-Y75"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="WnG-Uy-EXz" id="mcJ-eA-Bwc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="357"/>
         </scene>
     </scenes>
 </document>

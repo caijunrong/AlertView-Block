@@ -15,6 +15,7 @@
 		608892B01D24E9BF0096132B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 608892AE1D24E9BF0096132B /* LaunchScreen.storyboard */; };
 		608892BB1D24E9BF0096132B /* JRAlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 608892BA1D24E9BF0096132B /* JRAlertViewTests.m */; };
 		608892C61D24E9BF0096132B /* JRAlertViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 608892C51D24E9BF0096132B /* JRAlertViewUITests.m */; };
+		608892D61D24EA550096132B /* UIAlertView+JRBlockWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 608892D51D24EA550096132B /* UIAlertView+JRBlockWork.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		608892C11D24E9BF0096132B /* JRAlertViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JRAlertViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		608892C51D24E9BF0096132B /* JRAlertViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRAlertViewUITests.m; sourceTree = "<group>"; };
 		608892C71D24E9BF0096132B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		608892D41D24EA550096132B /* UIAlertView+JRBlockWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+JRBlockWork.h"; sourceTree = "<group>"; };
+		608892D51D24EA550096132B /* UIAlertView+JRBlockWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+JRBlockWork.m"; sourceTree = "<group>"; };
+		608892D71D24EAD10096132B /* JRBaseBlockWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRBaseBlockWork.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		6088929F1D24E9BF0096132B /* JRAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				608892D31D24EA0F0096132B /* JRAlertView */,
 				608892A31D24E9BF0096132B /* AppDelegate.h */,
 				608892A41D24E9BF0096132B /* AppDelegate.m */,
 				608892A61D24E9BF0096132B /* ViewController.h */,
@@ -138,6 +143,16 @@
 				608892C71D24E9BF0096132B /* Info.plist */,
 			);
 			path = JRAlertViewUITests;
+			sourceTree = "<group>";
+		};
+		608892D31D24EA0F0096132B /* JRAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				608892D71D24EAD10096132B /* JRBaseBlockWork.h */,
+				608892D41D24EA550096132B /* UIAlertView+JRBlockWork.h */,
+				608892D51D24EA550096132B /* UIAlertView+JRBlockWork.m */,
+			);
+			name = JRAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +287,7 @@
 			files = (
 				608892A81D24E9BF0096132B /* ViewController.m in Sources */,
 				608892A51D24E9BF0096132B /* AppDelegate.m in Sources */,
+				608892D61D24EA550096132B /* UIAlertView+JRBlockWork.m in Sources */,
 				608892A21D24E9BF0096132B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JRAlertView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.caijunrong.JRAlertView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JRAlertView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.caijunrong.JRAlertView;
 				PRODUCT_NAME = "$(TARGET_NAME)";

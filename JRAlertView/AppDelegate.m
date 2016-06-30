@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  JRAlertView
 //
-//  Created by biyabi on 16/6/30.
+//  Created by biyabi on 15/6/30.
 //  Copyright © 2016年 caijunrong. All rights reserved.
 //
 
